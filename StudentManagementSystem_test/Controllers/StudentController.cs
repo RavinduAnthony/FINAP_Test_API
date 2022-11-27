@@ -129,8 +129,6 @@ namespace StudentManagementSystem_test.Controllers
             SqlCommand command = new SqlCommand("spStudentOperations",connection);
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@action", "updateStudent");
-            command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@action", "insertStudent");
             command.Parameters.AddWithValue("@studentId", studentObj.studentId);
             command.Parameters.AddWithValue("@firstName", studentObj.firstName);
             command.Parameters.AddWithValue("@lastName", studentObj.lastName);
@@ -152,7 +150,7 @@ namespace StudentManagementSystem_test.Controllers
             }
         }
 
-        [HttpDelete]
+        //[HttpDelete]
         public IActionResult DeleteStudent(int studentId) 
         {
             SqlConnection connection = dbaccess.getConnection(_configuration);
