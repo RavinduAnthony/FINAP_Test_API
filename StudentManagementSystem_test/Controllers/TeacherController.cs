@@ -134,7 +134,7 @@ namespace StudentManagementSystem_test.Controllers
             }
         }
 
-        [HttpDelete]
+        
         public IActionResult DeleteTeacher(int teacherId) 
         {
             SqlConnection connection = dbaccess.getConnection(_configuration);

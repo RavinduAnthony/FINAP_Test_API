@@ -120,7 +120,7 @@ namespace StudentManagementSystem_test.Controllers
             }
         }
 
-        [HttpDelete]
+       
         public IActionResult DeleteSubject(int subjectId) 
         {
             SqlConnection connection = dbaccess.getConnection(_configuration);

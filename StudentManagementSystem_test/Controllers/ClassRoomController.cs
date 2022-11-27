@@ -119,7 +119,7 @@ namespace StudentManagementSystem_test.Controllers
             }
         }
 
-        [HttpDelete]
+        
         public IActionResult DeleteClassRoom(int classRoomId) 
         {
             SqlConnection connection = dbaccess.getConnection(_configuration);
